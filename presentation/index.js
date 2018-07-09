@@ -21,10 +21,10 @@ import createTheme from "spectacle/lib/themes/default";
 require("normalize.css");
 
 const theme = createTheme({
-  primary: "white",
-  secondary: "#1F2022",
-  tertiary: "#03A9FC",
-  quarternary: "#CECECE"
+  primary: "#ECEDEE",
+  secondary: "#FFBDCA",
+  tertiary: "#50DBD9",
+  quarternary: "#9799C7"
 }, {
   primary: "Montserrat",
   secondary: "Helvetica"
