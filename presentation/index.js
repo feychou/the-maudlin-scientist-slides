@@ -9,6 +9,7 @@ import {
   List,
   Slide,
   Text,
+  Image,
   Appear
 } from "spectacle";
 
@@ -44,7 +45,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Introduction
           </Heading>
-          <img src={toshino} />
+          <Image src={toshino} />
         </Slide>
 
         <Slide transition={["fade"]} bgColor="primary">
@@ -59,7 +60,7 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]} bgColor="quarternary">
           <Heading size={2} fit textColor="secondary">In about 280 words</Heading>
-          <img src={tweets} />
+          <Image src={tweets} />
         </Slide>
 
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
@@ -75,31 +76,31 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="primary" textColor="quarternary">
           <Heading size={3} fit textColor="secondary">Let's take a closer look</Heading>
           <Appear>
-            <img src={text} />
+            <Image src={text} />
           </Appear>
           <Appear>
-            <img src={intuitive} />
-          </Appear>
-        </Slide>
-
-        <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
-          <img src={text} />
-          <Appear>
-            <img src={wordList} />
+            <Image src={intuitive} />
           </Appear>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
-          <img src={text} />
+          <Image src={text} />
           <Appear>
-            <img src={wordChain} />
+            <Image src={wordList} />
           </Appear>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
-          <img src={text} />
+          <Image src={text} />
           <Appear>
-            <img src={walk} />
+            <Image src={wordChain} />
+          </Appear>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
+          <Image src={text} />
+          <Appear>
+            <Image src={walk} />
           </Appear>
         </Slide>
 
@@ -108,7 +109,7 @@ export default class Presentation extends React.Component {
           <List>
             <ListItem>https://twitter.com/MaudlinThe</ListItem>
             <ListItem>https://github.com/feychou/maudlin-scientist</ListItem>
-            <ListItem>https://github.com/feychou/the-maudlin-scientist-slides</ListItem>
+            <ListItem>https://feychou.github.io/the-maudlin-scientist-slides</ListItem>
           </List>
           <List>
             <ListItem>http://howistart.org/posts/clojure/1/</ListItem>
@@ -118,7 +119,7 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={1} textColor="secondary">Thank you!</Heading>
-          <img src={thanks} />
+          <Image src={thanks} />
         </Slide>
       </Deck>
     );
